@@ -1,0 +1,18 @@
+﻿@using IOOPMVC.Models
+
+@foreach (EtudiantViewModel item in Model)
+{
+    <h3>ID                  : @item.IdEtudiant</h3>
+    <h3>Matricule           : @item.Matricule</h3>
+    <h3>Nom                 : @item.personneViewModel.Nom</h3>
+    <h3>Prénom              : @item.personneViewModel.Prénom</h3>
+    <h3>Date de naissance   : @item.personneViewModel.DateNaissance</h3>
+    <h3>Numéro nationale    : @item.personneViewModel.Cin</h3>
+    <h3>Nationalité         : @item.personneViewModel.Nationalité</h3>
+    <h3>Sexe                : @item.personneViewModel.Sexe</h3>
+    <h3>GSM                 : @item.personneViewModel.Gsm</h3>
+    <h3>Email               : @item.personneViewModel.Email</h3>
+    <h3>Nom du Père         : @item.NomPère</h3>
+    <h3>Nom de Mère         : @item.NomMère</h3>
+    <hr />
+}

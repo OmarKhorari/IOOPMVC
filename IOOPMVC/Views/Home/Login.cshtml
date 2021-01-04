@@ -1,0 +1,100 @@
+﻿@model IOOPMVC.Models.UserLoginViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login V18</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/twitter-bootstrap/css/bootstrap.min.css">
+    <style>
+        /*
+        *
+        * ==========================================
+        * CUSTOM UTIL CLASSES
+        * ==========================================
+        *
+        */
+        body {
+            background-color: #32373d;
+        }
+
+        .bg-image {
+            background-image: url('../images/bg-01.jpg');
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+        }
+
+        .bg-light {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid w-75">
+        <div class="row no-gutter" style="margin-top: 60px;">
+            <!-- The image half -->
+            <div class="col-md-6 d-none d-md-flex bg-image m-auto"></div>
+
+
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="login d-flex align-items-center py-5 m-auto">
+
+                    <!-- Demo content-->
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">IOOPP</h3>
+                                <p class="text-muted mb-4">Identifiez-vous pour continuer</p>
+                                <form action="/home/Login" method="post">
+                                    <div class="form-group mb-3">
+                                        <input asp-for="UserEmail" type="email" placeholder="Identifiant ou adresse e-mail" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input asp-for="UserPassword" type="password" placeholder="Mot de passe" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                                        <label for="customCheck1" class="custom-control-label">Se souvenir de moi</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Se connecter</button>
+                                    <div class="text-center d-flex justify-content-between mt-4">
+                                        <p>
+                                            <a href="~/home/register" class="font-italic text-muted">
+                                                <u>S'enregistrer</u>
+                                            </a> |
+                                            <a href="#" class="font-italic text-muted">
+                                                <u>Mot de passe oublié</u>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- End -->
+
+                </div>
+            </div><!-- End -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--===============================================================================================-->
+    <script src="~/lib/jquery/jquery.slim.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+    <!--===============================================================================================-->
+
+</body>
+</html>

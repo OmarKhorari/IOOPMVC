@@ -1,0 +1,17 @@
+﻿@using IOOPMVC.Models
+@model EtudiantViewModel
+
+<h1>Etudiant</h1>
+<hr />
+<h3>ID                  : @Model.IdEtudiant</h3>
+<h3>Matricule           : @Model.Matricule</h3>
+<h3>Nom                 : @Model.personneViewModel.Nom</h3>
+<h3>Prénom              : @Model.personneViewModel.Prénom</h3>
+<h3>Date de naissance   : @Model.personneViewModel.DateNaissance</h3>
+<h3>Numéro nationale    : @Model.personneViewModel.Cin</h3>
+<h3>Nationalité         : @Model.personneViewModel.Nationalité</h3>
+<h3>Sexe                : @Model.personneViewModel.Sexe</h3>
+<h3>GSM                 : @Model.personneViewModel.Gsm</h3>
+<h3>Email               : @Model.personneViewModel.Email</h3>
+<h3>Nom du Père         : @Model.NomPère</h3>
+<h3>Nom de Mère         : @Model.NomMère</h3>

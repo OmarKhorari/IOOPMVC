@@ -1,0 +1,10 @@
+﻿body {
+}
+
+.form-group {
+    margin-bottom: 0.2rem;
+}
+
+.form-control {
+    height: 30px !important;
+}

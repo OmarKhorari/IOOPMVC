@@ -1,0 +1,84 @@
+﻿@model IEnumerable<IOOPMVC.Models.EtudiantViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "GetAllStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="PlaceHolderAddStudent"></div>
+
+<div class="container">
+    <h1>GetAllStudent</h1>
+
+    <p>
+        <button type="button" class="btn btn-info btn" data-toggle="ajax-modal" data-target="#addStudent" data-url="@Url.Action("AddStudent")">
+            Ajouter un nouveau étudiant
+        </button>
+    </p>
+    <div class="card">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+
+            </div>
+            <div class="col-md-6 col-lg-3">
+
+            </div>
+            <div class="col-md-6 col-lg-3">
+
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="statistic__item statistic__item--red">
+                    <h2 class="number">7.000 DH</h2>
+                    <span class="desc">Total facture impayé</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>
+                        Matricule
+                    </th>
+                    <th>
+                        Nom prénom
+                    </th>
+                    <th>
+                        Numéro nationale
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Matricule)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.personneViewModel.Nom)  @Html.DisplayFor(modelItem => item.personneViewModel.Prénom)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.personneViewModel.Cin)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+
+</div>

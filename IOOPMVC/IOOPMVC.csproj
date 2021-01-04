@@ -1,0 +1,227 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e5961c2a-027c-4112-adbf-335b9e48e721</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap\.DS_Store" />
+    <None Include="wwwroot\css\bootstrap\mixins\.DS_Store" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\jquery.min.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\popper.js" />
+    <None Include="wwwroot\lib\jquery\jquery.js" />
+    <None Include="wwwroot\lib\jquery\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\jquery.min.map" />
+    <None Include="wwwroot\lib\jquery\jquery.slim.js" />
+    <None Include="wwwroot\lib\jquery\jquery.slim.min.js" />
+    <None Include="wwwroot\lib\jquery\jquery.slim.min.map" />
+    <None Include="wwwroot\lib\twitter-bootstrap\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\twitter-bootstrap\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\twitter-bootstrap\js\bootstrap.js" />
+    <None Include="wwwroot\lib\twitter-bootstrap\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\bootstrap-grid.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\bootstrap-reboot.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\bootstrap.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_alert.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_background-variant.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_badge.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_border-radius.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_buttons.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_caret.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_clearfix.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_deprecate.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_float.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_forms.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_gradients.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_grid-framework.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_grid.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_hover.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_image.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_list-group.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_lists.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_nav-divider.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_pagination.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_reset-text.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_resize.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_screen-reader.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_size.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_table-row.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_text-emphasis.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_text-hide.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_transition.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\mixins\_visibility.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_align.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_background.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_borders.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_clearfix.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_display.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_embed.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_flex.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_float.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_interactions.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_overflow.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_position.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_screenreaders.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_shadows.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_sizing.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_spacing.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_stretched-link.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_text.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\utilities\_visibility.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\vendor\_rfs.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_alert.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_badge.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_breadcrumb.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_button-group.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_buttons.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_card.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_carousel.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_close.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_code.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_custom-forms.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_dropdown.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_forms.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_functions.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_grid.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_images.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_input-group.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_jumbotron.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_list-group.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_media.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_mixins.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_modal.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_nav.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_navbar.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_pagination.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_popover.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_print.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_progress.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_reboot.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_root.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_spinners.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_tables.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_toasts.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_tooltip.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_transitions.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_type.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_utilities.scss" />
+    <None Include="wwwroot\lib\twitter-bootstrap\scss\_variables.scss" />
+    <None Include="wwwroot\scss\bootstrap\.DS_Store" />
+    <None Include="wwwroot\scss\bootstrap\bootstrap-grid.scss" />
+    <None Include="wwwroot\scss\bootstrap\bootstrap-reboot.scss" />
+    <None Include="wwwroot\scss\bootstrap\bootstrap.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_alert.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_background-variant.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_badge.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_border-radius.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_box-shadow.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_breakpoints.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_buttons.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_caret.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_clearfix.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_deprecate.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_float.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_forms.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_gradients.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_grid-framework.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_grid.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_hover.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_image.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_list-group.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_lists.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_nav-divider.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_pagination.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_reset-text.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_resize.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_screen-reader.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_size.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_table-row.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_text-hide.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_text-truncate.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_transition.scss" />
+    <None Include="wwwroot\scss\bootstrap\mixins\_visibility.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_align.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_background.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_borders.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_clearfix.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_display.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_embed.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_flex.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_float.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_overflow.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_position.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_screenreaders.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_shadows.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_sizing.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_spacing.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_stretched-link.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_text.scss" />
+    <None Include="wwwroot\scss\bootstrap\utilities\_visibility.scss" />
+    <None Include="wwwroot\scss\bootstrap\vendor\_rfs.scss" />
+    <None Include="wwwroot\scss\bootstrap\_alert.scss" />
+    <None Include="wwwroot\scss\bootstrap\_badge.scss" />
+    <None Include="wwwroot\scss\bootstrap\_breadcrumb.scss" />
+    <None Include="wwwroot\scss\bootstrap\_button-group.scss" />
+    <None Include="wwwroot\scss\bootstrap\_buttons.scss" />
+    <None Include="wwwroot\scss\bootstrap\_card.scss" />
+    <None Include="wwwroot\scss\bootstrap\_carousel.scss" />
+    <None Include="wwwroot\scss\bootstrap\_close.scss" />
+    <None Include="wwwroot\scss\bootstrap\_code.scss" />
+    <None Include="wwwroot\scss\bootstrap\_custom-forms.scss" />
+    <None Include="wwwroot\scss\bootstrap\_dropdown.scss" />
+    <None Include="wwwroot\scss\bootstrap\_forms.scss" />
+    <None Include="wwwroot\scss\bootstrap\_functions.scss" />
+    <None Include="wwwroot\scss\bootstrap\_grid.scss" />
+    <None Include="wwwroot\scss\bootstrap\_images.scss" />
+    <None Include="wwwroot\scss\bootstrap\_input-group.scss" />
+    <None Include="wwwroot\scss\bootstrap\_jumbotron.scss" />
+    <None Include="wwwroot\scss\bootstrap\_list-group.scss" />
+    <None Include="wwwroot\scss\bootstrap\_media.scss" />
+    <None Include="wwwroot\scss\bootstrap\_mixins.scss" />
+    <None Include="wwwroot\scss\bootstrap\_modal.scss" />
+    <None Include="wwwroot\scss\bootstrap\_nav.scss" />
+    <None Include="wwwroot\scss\bootstrap\_navbar.scss" />
+    <None Include="wwwroot\scss\bootstrap\_pagination.scss" />
+    <None Include="wwwroot\scss\bootstrap\_popover.scss" />
+    <None Include="wwwroot\scss\bootstrap\_print.scss" />
+    <None Include="wwwroot\scss\bootstrap\_progress.scss" />
+    <None Include="wwwroot\scss\bootstrap\_reboot.scss" />
+    <None Include="wwwroot\scss\bootstrap\_root.scss" />
+    <None Include="wwwroot\scss\bootstrap\_spinners.scss" />
+    <None Include="wwwroot\scss\bootstrap\_tables.scss" />
+    <None Include="wwwroot\scss\bootstrap\_toasts.scss" />
+    <None Include="wwwroot\scss\bootstrap\_tooltip.scss" />
+    <None Include="wwwroot\scss\bootstrap\_transitions.scss" />
+    <None Include="wwwroot\scss\bootstrap\_type.scss" />
+    <None Include="wwwroot\scss\bootstrap\_utilities.scss" />
+    <None Include="wwwroot\scss\bootstrap\_variables.scss" />
+    <None Include="wwwroot\scss\style.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Unity" Version="5.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IOOPMVC.Business\IOOPMVC.Business.csproj" />
+  </ItemGroup>
+
+</Project>

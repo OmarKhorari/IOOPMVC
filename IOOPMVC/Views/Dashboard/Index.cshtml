@@ -1,0 +1,210 @@
+﻿@{
+    ViewData["Title"] = "AddStudent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<link rel="stylesheet" type="text/css" href="~/css/theme.css">
+<style>
+    .users-list {
+        padding-left: 0;
+        list-style: none;
+    }
+    .users-list > li img {
+        border-radius: 50%;
+        height: auto;
+        max-width: 100%;
+    }
+    .users-list-name {
+        color: #495057;
+        font-size: .875rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .users-list-date {
+        color: #748290;
+        font-size: 12px;
+    }
+
+    .users-list-date, .users-list-name {
+        display: block;
+    }
+    .users-list > li {
+        float: left;
+        padding: 10px;
+        text-align: center;
+        width: 25%;
+    }
+    .card-header {
+        background-color: transparent;
+        border-bottom: 1px solid rgba(0,0,0,.125);
+        padding: .75rem 1.25rem;
+        position: relative;
+        border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem;
+    }
+
+    .card-header {
+        margin-bottom: 0;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <h2>Dashboard</h2>
+    </div>
+</div>
+<section class="statistic statistic2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="statistic__item statistic__item--green">
+                    <h2 class="number">7</h2>
+                    <span class="desc">Etudiants</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="statistic__item statistic__item--orange">
+                    <h2 class="number">3</h2>
+                    <span class="desc">Professeurs</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="statistic__item statistic__item--blue">
+                    <h2 class="number">2</h2>
+                    <span class="desc">Classe</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="statistic__item statistic__item--red">
+                    <h2 class="number">7.000 DH</h2>
+                    <span class="desc">Total facture impayé</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- USERS LIST -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Derniers professeurs</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <ul class="users-list clearfix">
+                            <li>
+                                <img src="~/images/icons/Professeurs/user1-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Alexander Pierce</a>
+                                <span class="users-list-date">Today</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Professeurs/user8-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Norman</a>
+                                <span class="users-list-date">Yesterday</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Professeurs/user7-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Jane</a>
+                                <span class="users-list-date">12 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Professeurs/user6-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">John</a>
+                                <span class="users-list-date">12 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Professeurs/user2-160x160.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Alexander</a>
+                                <span class="users-list-date">13 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Professeurs/user5-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Sarah</a>
+                                <span class="users-list-date">14 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Professeurs/user4-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Nora</a>
+                                <span class="users-list-date">15 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Professeurs/user3-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Nadia</a>
+                                <span class="users-list-date">15 Jan</span>
+                            </li>
+                        </ul>
+                        <!-- /.users-list -->
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer text-center">
+                        <a href="javascript:">View All Users</a>
+                    </div>
+                    <!-- /.card-footer -->
+                </div>
+                <!--/.card -->
+            </div>
+            <!-- /.col -->
+
+            <div class="col-md-6">
+                <!-- USERS LIST -->
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Latest Members</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0">
+                        <ul class="users-list clearfix">
+                            <li>
+                                <img src="~/images/icons/Etudiants/user1-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Alexander Pierce</a>
+                                <span class="users-list-date">Today</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Etudiants/user8-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Norman</a>
+                                <span class="users-list-date">Yesterday</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Etudiants/user7-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Jane</a>
+                                <span class="users-list-date">12 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Etudiants/user6-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">John</a>
+                                <span class="users-list-date">12 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Etudiants/user2-160x160.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Alexander</a>
+                                <span class="users-list-date">13 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Etudiants/user5-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Sarah</a>
+                                <span class="users-list-date">14 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Etudiants/user4-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Nora</a>
+                                <span class="users-list-date">15 Jan</span>
+                            </li>
+                            <li>
+                                <img src="~/images/icons/Etudiants/user3-128x128.jpg" alt="User Image">
+                                <a class="users-list-name" href="#">Nadia</a>
+                                <span class="users-list-date">15 Jan</span>
+                            </li>
+                        </ul>
+                        <!-- /.users-list -->
+                    </div>
+                    <!-- /.card-body -->
+                    <div class="card-footer text-center">
+                        <a href="javascript:">View All Users</a>
+                    </div>
+                    <!-- /.card-footer -->
+                </div>
+                <!--/.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+    </div>
+</section>

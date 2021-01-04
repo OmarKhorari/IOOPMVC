@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Sidebar 09</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/lib/twitter-bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/Site.css">
+</head>
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        <nav id="sidebar">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                </button>
+            </div>
+            <div class="img bg-wrap text-center py-4" style="background-image: url('@Url.Content("~/images/bg_1.jpg")');">
+                <div class="user-logo">
+                    <div class="img" style="background-image: url('@Url.Content("~/images/logo.jpg")');"></div>
+                    <h3>Catriona Henderson</h3>
+                </div>
+            </div>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="#"><span class="fa fa-home mr-3"></span> Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-download mr-3 notif"><small class="d-flex align-items-center justify-content-center">5</small></span> Etudiants</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-gift mr-3"></span> Professeurs</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-sign-out mr-3"></span> Inscriptions</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-trophy mr-3"></span> Classes</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-cog mr-3"></span> Cours</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-support mr-3"></span> Examens</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-sign-out mr-3"></span> Payments</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-sign-out mr-3"></span> Données de l'établissement</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-sign-out mr-3"></span> Quiter</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+            @RenderBody()
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/js/popper.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/js/main.js"></script>
+    <script src="~/js/Site.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+</html>

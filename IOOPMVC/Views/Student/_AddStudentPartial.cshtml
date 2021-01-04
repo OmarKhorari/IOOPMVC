@@ -1,0 +1,140 @@
+﻿@model IOOPMVC.Models.EtudiantViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="modal fade" id="addStudent">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header bg-primary">
+                <h4 class="modal-title">Information sur le stagiaires</h4>
+                <button type="button" class="close" data-dismiss="modal"><span>X</span></button>
+            </div>
+            <div class="modal-body">
+                <form asp-action="AddStudent" asp-controller="Student" method="post" class="needs-validation" novalidate>
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group row">
+                        <label for="Matricule" class="col-sm-2 col-form-label col-form-label-sm">Matricule</label>
+                        <div class="col-sm-4">
+                            <input asp-for="Matricule" class="form-control form-control-sm" placeholder="Matricule" required />
+                        </div>
+                        <span asp-validation-for="Matricule" class="text-danger"></span>
+                        <label for="DateInscription" class="col-sm-2 col-form-label col-form-label-sm">Date d'inscription</label>
+                        <div class="col-sm-4">
+                            <input type="date" id="DateInscription" name="DateInscription" class="form-control form-control-sm" placeholder="Date d'inscription" required />
+                        </div>
+                        <span asp-validation-for="Matricule" class="text-danger"></span>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Nom" class="col-sm-2 col-form-label col-form-label-sm">Nom</label>
+                        <div class="col-sm-4">
+                            <input asp-for="personneViewModel.Nom" class="form-control form-control-sm" placeholder="Nom" required />
+                        </div>
+                        <span asp-validation-for="personneViewModel.Nom" class="text-danger"></span>
+                        <label for="Prénom" class="col-sm-2 col-form-label col-form-label-sm">Prénom</label>
+                        <div class="col-sm-4">
+                            <input asp-for="personneViewModel.Prénom" class="form-control form-control-sm" placeholder="Prénom" required />
+                        </div>
+                        <span asp-validation-for="personneViewModel.Prénom" class="text-danger"></span>
+                    </div>
+                    <div class="form-group row">
+                        <label for="DateNaissance" class="col-sm-2 col-form-label col-form-label-sm">Date de naissance</label>
+                        <div class="col-sm-4">
+                            @Html.EditorFor(m => m.personneViewModel.DateNaissance, new { htmlAttributes = new { @class = "form-control form-control-sm", @placeholder = "Date de naissance", @required = "required" } })
+                        </div>
+                        <span asp-validation-for="personneViewModel.Sexe" class="text-danger"></span>
+                        <label for="Sexe" class="col-sm-2 col-form-label col-form-label-sm">Sexe</label>
+                        <div class="col-sm-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label col-form-label col-form-label-sm" for="inlineRadio1">Homme</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label col-form-label col-form-label-sm" for="inlineRadio2">Femme</label>
+                            </div>
+                        </div>
+                        <span asp-validation-for="personneViewModel.DateNaissance" class="text-danger"></span>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Nationalité" class="col-sm-2 col-form-label col-form-label-sm">Numéro national</label>
+                        <div class="col-sm-4">
+                            @Html.EditorFor(m => m.personneViewModel.Cin, new { htmlAttributes = new { @class = "form-control form-control-sm", placeholder = "Numéro nationale", @required = "required" } })
+                        </div>
+                        <span asp-validation-for="personneViewModel.Cin" class="text-danger"></span>
+                        <label for="Nationalité" class="col-sm-2 col-form-label col-form-label-sm">Nationalité</label>
+                        <div class="col-sm-4">
+                            @Html.EditorFor(m => m.personneViewModel.Nationalité, new { htmlAttributes = new { @class = "form-control form-control-sm", placeholder = "Nationalité", @required = "required" } })
+                        </div>
+                        <span asp-validation-for="personneViewModel.Nationalité" class="text-danger"></span>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Téléphone" class="col-sm-2 col-form-label col-form-label-sm">Téléphone</label>
+                        <div class="col-sm-2">
+                            @Html.EditorFor(m => m.personneViewModel.Téléphone, new { htmlAttributes = new { @class = "form-control form-control-sm", placeholder = "Télépone", @required = "required" } })
+                        </div>
+                        <label for="GSM" class="col-sm-1 col-form-label col-form-label-sm">GSM</label>
+                        <div class="col-sm-2">
+                            @Html.EditorFor(m => m.personneViewModel.Gsm, new { htmlAttributes = new { @class = "form-control form-control-sm", placeholder = "GSM", @required = "required" } })
+                        </div>
+                        <label for="Email" class="col-sm-1 col-form-label col-form-label-sm">E-mail</label>
+                        <div class="col-sm-4">
+                            @Html.EditorFor(m => m.personneViewModel.Email, new { htmlAttributes = new { @class = "form-control form-control-sm", placeholder = "E-mail", @required = "required" } })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Adresse1" class="col-sm-2 col-form-label col-form-label-sm">Adresse</label>
+                        <div class="col-sm-10">
+                            @Html.EditorFor(m => m.adresseViewModel.Adresse1, new { htmlAttributes = new { @class = "form-control form-control-sm", placeholder = "Adresse", @required = "required" } })
+                        </div>
+                        <span asp-validation-for="adresseViewModel.Adresse1" class="text-danger"></span>
+                    </div>
+                    <div class="form-group row">
+                        <label for="Cp" class="col-sm-2 col-form-label col-form-label-sm">Code Postal</label>
+                        <div class="col-sm-4">
+                            @Html.EditorFor(m => m.adresseViewModel.Cp, new { htmlAttributes = new { @class = "form-control form-control-sm", placeholder = "Code postal", @required = "required" } })
+                        </div>
+                        <label for="Ville" class="col-sm-2 col-form-label col-form-label-sm">Ville :</label>
+                        <div class="col-sm-4">
+                            @Html.EditorFor(m => m.adresseViewModel.Ville, new { htmlAttributes = new { @class = "form-control form-control-sm", placeholder = "Ville", @required = "required" } })
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="ProfessionPère" class="col-sm-2 col-form-label col-form-label-sm">Profession du Père</label>
+                        <div class="col-sm-4">
+                            <input asp-for="ProfessionPère" class="form-control form-control-sm" placeholder="Profession du Père" />
+                        </div>
+                        <label for="NomPère" class="col-sm-2 col-form-label col-form-label-sm">Tranche Sal. Père:</label>
+                        <div class="col-sm-4">
+                            <input asp-for="NomPère" class="form-control form-control-sm" placeholder="Tranche Salariale Père" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="ProfessionMère" class="col-sm-2 col-form-label col-form-label-sm">Profession du Mère</label>
+                        <div class="col-sm-4">
+                            <input asp-for="ProfessionMère" class="form-control form-control-sm" placeholder="Profession du Mère" />
+                        </div>
+                        <label for="NomMère" class="col-sm-2 col-form-label col-form-label-sm">Tranche Sal. Mère:</label>
+                        <div class="col-sm-4">
+                            <input asp-for="NomMère" class="form-control form-control-sm" placeholder="Tranche Salariale Mère" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="NiveauEtudePère" class="col-sm-2 col-form-label col-form-label-sm">Niveau For. Père</label>
+                        <div class="col-sm-4">
+                            <input asp-for="NiveauEtudePère" class="form-control form-control-sm" placeholder="Niveau Formation Père" />
+                        </div>
+                        <label for="NiveauEtudeMère" class="col-sm-2 col-form-label col-form-label-sm">Niveau For. Mère :</label>
+                        <div class="col-sm-4">
+                            <input asp-for="NiveauEtudeMère" class="form-control form-control-sm" placeholder="Niveau Formation Mère" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                <button type="button" id="btnSaveStusent" class="btn btn-primary" data-save="modal">Ajouter</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login V18</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="~/lib/twitter-bootstrap/css/bootstrap.min.css">
+    <style>
+                /*
+        *
+        * ==========================================
+        * CUSTOM UTIL CLASSES
+        * ==========================================
+        *
+        */
+                .login,
+                .image {
+                    min-height: 100vh;
+                }
+
+                .bg-image {
+                    background-image: url('../images/bg-01.jpg');
+                    background-size: cover;
+                    background-position: center center;
+                }
+    </style>
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <!-- The image half -->
+            <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+            <!-- The content half -->
+            <div class="col-md-6 bg-light">
+                <div class="login d-flex align-items-center py-5">
+
+                    <!-- Demo content-->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 col-xl-7 mx-auto">
+                                <h3 class="display-4">IOOPP</h3>
+                                <p class="text-muted mb-4">S'enregistrer</p>
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <input id="inputEmail" type="email" placeholder="Identifiant ou adresse e-mail" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="inputPassword" type="password" placeholder="Mot de passe" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <input id="inputPassword" type="password" placeholder="Confirmer mot de passe" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">S'enregistrer</button>
+                                    <div class="text-center d-flex justify-content-between mt-4">
+                                        <p>
+                                            <a href="~/home" class="font-italic text-muted">
+                                                <u>S'identifier</u>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div><!-- End -->
+
+                </div>
+            </div><!-- End -->
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--===============================================================================================-->
+    <script src="~/lib/jquery/jquery.slim.js"></script>
+    <!--===============================================================================================-->
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.js"></script>
+    <!--===============================================================================================-->
+
+</body>
+</html>
